@@ -8,14 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-<div class="main">
+    <div class="nav">
+        <form action="./index.php">
+        <button>Darbuotojai</button>
+    </form>
+
+    <form action="./projektai.php">
+        <button>projektai</button>
+    </form>
+    </div>
+
 <table>
 <tr>
 <td>Id</td>
-<td>name</td>
+<td>Name</td>
 <td>Last name</td>
-<td>age</td>
-<td>project name</td>
+<td>Working on</td>
 </tr>
 <?php
 $servername = "localhost";
@@ -30,16 +38,17 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = 'SELECT id, name, last_name, age, project_name FROM sprint1.darbuotojai';
+$sql = 'SELECT id, first_name, last_name, age, WorkingOn FROM sprint1.darbuotojai';
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
         print("<tr><td> " . $row["id"]."</td> " .
-              " <td>" . $row["name"]."</td> " .
+              " <td>" . $row["first_name"]."</td> " .
                "<td>" . $row["last_name"]."</td> " .
                "<td>" . $row["age"]."</td> " .
-               "<td>" . $row["project_name"]."</td><tr> ");
+               "<td>" . $row["WorkingOn"]."</td>" . 
+               "<td><button>DELETE</button><button>UPDATE</button></td> <br>". "<tr>");
     }
 }
  else {
@@ -47,31 +56,8 @@ if (mysqli_num_rows($result) > 0) {
     
 }
 ?>
-<tr>
-<td>Project id</td>
-<td>Project name</td>
-
-</tr>
-<?php
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-$sql = 'SELECT project_id, project_name FROM sprint1.projektai';
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    while($row = mysqli_fetch_assoc($result)) {
-        print("<tr><td> " . $row["project_id"]."</td> " .
-              " <td>" . $row["project_name"]."</td><tr> ");
-    }
-}
-
-mysqli_close($conn);
-?>
 </table>
-</div>
+
+
 </body>
 </html>
