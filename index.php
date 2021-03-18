@@ -23,6 +23,7 @@
 <td>Id</td>
 <td>Name</td>
 <td>Last name</td>
+<td>age</td>
 <td>Working on</td>
 </tr>
 <?php
