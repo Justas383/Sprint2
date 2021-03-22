@@ -21,10 +21,10 @@ This project is for educational porpuses only.
 -   Failed to make the update functions
 ## Project launch instructions
 
---   Clone this repository or download it as a ZIP file.
---   Clone/extract it to your AMPPS (.../AMPPS/www/), XAMPP or other web server platform directory.
---   Import 'sp2.sql' database into your local MySQL server.
---   Open the app via your preferred web browser (e.g. http://localhost/sprint2/).
+-   Clone this repository or download it as a ZIP file.
+-   Clone/extract it to your AMPPS (.../AMPPS/www/), XAMPP or other web server platform directory.
+-   Import 'sp2.sql' database into your local MySQL server.
+-   Open the app via your preferred web browser (e.g. http://localhost/sprint2/).
 
 ## Author
 
