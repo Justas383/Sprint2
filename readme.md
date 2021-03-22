@@ -1,7 +1,7 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# Sprint1
+# Sprint2
 Create a project manager.
 
 
