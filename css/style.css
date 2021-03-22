@@ -6,6 +6,9 @@ body{
     background-color: whitesmoke;
     margin: 0px;
 }
+td, tr{
+    border: 1px solid black;
+}
 .main{
     width: 100%;
 }
@@ -14,10 +17,16 @@ table{
     border: solid 2px black;
 }
 .nav{
+    display: flex;
+    align-items: center;
     width: 100%;
     background-color: orangered;
     height: 50px;
     color: white;
     font-weight: 400;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav > a{
+    color: white;
+    margin-left: 10px;
 }
