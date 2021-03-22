@@ -18,13 +18,14 @@
 <?php
 require('./Library/Connection.php');
 require('./Library/delete.php');
-require('./Library/pridetiDarbuotoja.php');
-require('./Library/pridetiProjekta.php');
 if ($_GET['path'] == 'darbuotojai/') {
     require('./Library/darbuotojai.php');
 } else {
     require('./Library/projektai.php');
 }
+require('./Library/pridetiDarbuotoja.php');
+require('./Library/pridetiProjekta.php');
+
 
 //Truksta update funkcionalumo.
 //Truksta prideti prie naujo darbuotojo projekta.

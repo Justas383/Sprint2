@@ -29,7 +29,6 @@ if (mysqli_num_rows($resultDarb) > 0) {
 }
 ?>
 </table>
-
     <form action="" method="post">
         <input type="text" name="Fname"  placeholder="First name" required autofocus><br>
         <input type="text" name="Lname"  placeholder="Last name" required autofocus><br>

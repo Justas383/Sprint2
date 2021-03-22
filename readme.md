@@ -17,8 +17,13 @@ This project is for educational porpuses only.
 -   Create new employee
 -   Create new project
 -   Auto project counter
-------------------------------------------------
+
+## Things to fix
+
 -   Failed to make the update functions
+-   Page reloading after every add/delete action
+-   Need to press on navigation button first, to do any add action in project tab
+
 ## Project launch instructions
 
 -   Clone this repository or download it as a ZIP file.
