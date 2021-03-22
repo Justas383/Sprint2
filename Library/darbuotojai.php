@@ -1,5 +1,4 @@
 <?php
-
 print('<table>
 <tr>
 <td>Id</td>

@@ -1,12 +1,10 @@
 <?php
-
 print('<table>
 <tr>
 <td>Project id</td>
 <td>Project name</td>
 <td>Full_name</td>
 </tr>');
-
 
 $sql = 'SELECT project_id, project_name, GROUP_CONCAT(CONCAT(first_name, " " ,last_name) SEPARATOR ", ") 
 as Full_name 
@@ -31,7 +29,6 @@ else {
     echo "0 results";
 }
 ?>
-
 </table>
 <form action="" method="post">
         <input  type="text" name="project_name" placeholder="Project name" required autofocus><br>
